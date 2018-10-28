@@ -63,5 +63,10 @@ for i=1:1:19
     end
 end
 
-# Heatmap
-heatmap(ylab,xlab,Z,title="Toques esperados",color=:plasma,clim=(0,25),xlabel = "Probabilidad", ylabel = "Candidatos",colorbar_title="Toques esperados")
+#Pkg.add("Plots")
+#Pkg.add("PyPlot")
+#heatmap
+using Plots
+using PyPlot
+pyplot()
+heatmap(ylab,xlab,Z,title="Toques esperados",color=:plasma,clim=(0,125),xlabel = "Candidatos", ylabel = "Probabilidad",colorbar_title="Toques esperados")
